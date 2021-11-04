@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 require 'vendor/autoload.php';
 
@@ -17,5 +18,5 @@ $cursos = $buscador->buscar('/cursos-online-programacao/php');
 
 //loop para iterar sobre os cursos encontrados pelo crawler e exibi-los
 foreach ($cursos as $curso) {
-    echo $curso . PHP_EOL;
+    exibeMensagem($curso);
 }
